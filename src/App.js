@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import './App.css';
 import './login-register.css';
@@ -15,17 +15,19 @@ import Register from "./components/register.component";
 
 
 function App() {
-  return (     
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/favorites" exact component={Favorites} />
-      <Route path="/bst/:id" exact component={Cnbst} />
-      <Route path="/profile/" component={Profile} />
-      {/* <Route path="/profile/:username" component={Profile} /> */}
-      <Route path="/logout" exact component={Logout} />
-      <Route path="/login" exact component={Login} />
-      <Route path="/register" exact component={Register} />
-    </Switch> 
+  return ( 
+    <HashRouter basename='/'>    
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/favorites" exact component={Favorites} />
+        <Route path="/bst/:id" exact component={Cnbst} />
+        <Route path="/profile/" component={Profile} />
+        {/* <Route path="/profile/:username" component={Profile} /> */}
+        <Route path="/logout" exact component={Logout} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
+      </Switch> 
+    </HashRouter>
   );
 }
 
