@@ -17,7 +17,7 @@ import Register from "./components/register.component";
 function App() {
   
   return (     
-    <BrowserRouter  basename={`${process.env.PUBLIC_URL}/`}>
+    <BrowserRouter  basename="http://toilahuong.tech/giphy">
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/favorites" exact component={Favorites} />
