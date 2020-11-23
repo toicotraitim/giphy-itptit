@@ -1,0 +1,4 @@
+{
+    "SERVER_URL": "https://giphy-itptit.herokuapp.com",
+    "CLIENT_URL": "http://localhost:3000"
+}
