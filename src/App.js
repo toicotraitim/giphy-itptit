@@ -16,7 +16,7 @@ import Register from "./components/register.component";
 
 function App() {
   return ( 
-    <HashRouter basename='/'>    
+    <HashRouter basename='/giphy'>    
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/favorites" exact component={Favorites} />
