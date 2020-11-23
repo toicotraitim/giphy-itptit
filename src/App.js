@@ -15,20 +15,17 @@ import Register from "./components/register.component";
 
 
 function App() {
-  
   return (     
-    <BrowserRouter  basename="http://toilahuong.tech/giphy">
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/favorites" exact component={Favorites} />
-        <Route path="/bst/:id" exact component={Cnbst} />
-        <Route path="/profile/" component={Profile} />
-        {/* <Route path="/profile/:username" component={Profile} /> */}
-        <Route path="/logout" exact component={Logout} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/register" exact component={Register} />
-      </Switch> 
-    </BrowserRouter>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/favorites" exact component={Favorites} />
+      <Route path="/bst/:id" exact component={Cnbst} />
+      <Route path="/profile/" component={Profile} />
+      {/* <Route path="/profile/:username" component={Profile} /> */}
+      <Route path="/logout" exact component={Logout} />
+      <Route path="/login" exact component={Login} />
+      <Route path="/register" exact component={Register} />
+    </Switch> 
   );
 }
 
